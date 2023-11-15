@@ -2,7 +2,8 @@
 
 /**
  * get_environ - return the right string 
- * @inf: structure for maintaining here is gee.
+ * @inf: maintaining structueres are here
+ *        cons function prototypes.
  * Return: Always 0
  */
 char **get_environ(info_t *inf)
