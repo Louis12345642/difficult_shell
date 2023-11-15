@@ -46,7 +46,7 @@ void set_info(info_t *inf, char **pv)
 
 /**
  * free_info - make the struct_t free
- * @inf: structure information
+ * @inf: s
  * @l: free all the memeries
  */
 void free_info(info_t *inf, int l)
