@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * input_buf - this is the buffer change 
+ * get_input - get the line without newline
  * @inf: params structure
  * @bu: buffer address
  * @le: adress length
@@ -110,7 +110,7 @@ ssize_t read_buf(info_t *inf, char *buf, size_t *j)
 }
 
 /**
- * _getline - finds the next line in the code 
+* get_input - get the line without nextline
  * @inf: params structure
  * @pt: pointers address ot the next code
  * @leng: preacllocated size of the memory is here
@@ -157,7 +157,7 @@ int _getline(info_t *inf, char **pt, size_t *leng)
 }
 
 /**
- * sigintHandler -refuse ctr+c 
+* get_input - get the line without ctr+c
  * @sig_n: number of signal
  *
  * Return: void
