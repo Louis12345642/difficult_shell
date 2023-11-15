@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * get_environ - return the right string 
+  * _get_environ - get ride of env variables
  * @inf: maintaining structueres are here
  *        cons function prototypes.
  * Return: Always 0
