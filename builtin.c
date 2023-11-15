@@ -42,12 +42,12 @@ int _mycd(info_t *info)
 
 	a = getcwd(buffer, 1024);
 	if (!a)
-		_puts("getcwd failure emsg here<<\n");
+		_puts("TODO: >>getcwd failure emsg here<<\n");
 	if (!info->argv[1])
 	{
 		dr = _getenv(info, "HOME=");
 		if (!dr)
-			chdir_r = /*what do we here */
+			chdir_r = /* TODO:here is a todo? */
 				chdir((dr = _getenv(info, "PWD=")) ? dr : "/");
 		else
 			chdir_r = chdir(dr);
@@ -61,8 +61,8 @@ int _mycd(info_t *info)
 			return (1);
 		}
 		_puts(_getenv(info, "OLDPWD=")), _putchar('\n');
-		chdir_ret = /*what do we here */
-			chdir((dr= _getenv(info, "OLDPWD=")) ? dr : "/");
+		chdir_ret = /* TODO: nothing to be done here? */
+			chdir((dr= _getenv(info, "oldp=")) ? dr : "/");
 	}
 	else
 		chdir_r = chdir(info->argv[1]);
@@ -73,25 +73,25 @@ int _mycd(info_t *info)
 	}
 	else
 	{
-		_setenv(info, "OLDPWD", _getenv(info, "PWD="));
-		_setenv(info, "PWD", getcwd(buffer, 1024));
+		_setenv(info, "olpd", _getenv(info, "pwd="));
+		_setenv(info, "pwd", getcwd(buffer, 1024));
 	}
 	return (0);
 }
 
 /**
- * _myhelp - change the current directory
+ * _myhelp - changes the current directory of the process
  * @info: arguement structures . for maintining
  *             the code 
- *  Return:  0
+ *  Return: Always 0
  */
 int _myhelp(info_t *info)
 {
-	char **arg_ar;
+	char **arg;
 
-	arg_ar = info->argv;
-	_puts("call the work for function implementing \n");
+	arg = info->argv;
+	_puts("help call works. Function not yet implemented \n");
 	if (0)
-		_puts(*arg_ar); /* tempure of unsude workdirectory */
+		_puts(*arg); /* temp att_unused workaround */
 	return (0);
 }
