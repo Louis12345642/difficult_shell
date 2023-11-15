@@ -3,7 +3,6 @@
 /**
  * get_environ - return the right string 
  * @inf: structure for maintaining here is gee.
- *          consts function prototype.
  * Return: Always 0
  */
 char **get_environ(info_t *inf)
@@ -51,7 +50,6 @@ int _unsetenv(info_t *inf, char *va)
 
 /**
  * _setenv - create a new env variable,
- *             or changing an existing 1
  * @in: maintaining structure here is a value
  * @va: the variable here is a thing
  * @vac: value of the are here 
