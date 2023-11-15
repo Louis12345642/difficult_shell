@@ -157,7 +157,7 @@ int _getline(info_t *inf, char **pt, size_t *leng)
 }
 
 /**
-* signHandler - get the line without ctr+c
+* sigintHandler - get the line without ctr+c
  * @sig_n: number of signal
  *
  * Return: void
