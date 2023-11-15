@@ -2,9 +2,9 @@
 
 /**
  **_strncpy - copies a string
- *@dest: string to be copied
- *@src: the main string
- *@n: number of characters to copy
+ *@d: string to be copied
+ *@st: the main string
+ *@h: number of characters to copy
  *Return: conected charaters
  */
 char *_strncpy(char *d, char *st, int h)
@@ -37,23 +37,23 @@ char *_strncpy(char *d, char *st, int h)
  *@n: the amount the bytes
  *Return: the connected string
  */
-char *_strncat(char *ds, char *sr, int n)
+char *_strncat(char *dest, char *scr, int n)
 {
 	int l, h;
-	char *s = ds;
+	char *s = dest;
 
 	l = 0;
 	h = 0;
-	while (ds[l] != '\0')
+	while (dest[l] != '\0')
 		l++;
-	while (sr[h] != '\0' && h < n)
+	while (scr[h] != '\0' && h < n)
 	{
-		ds[l] = sr[h];
+		dest[l] = scr[h];
 		l++;
 		h++;
 	}
 	if (h < n)
-		ds[l] = '\0';
+		dest[l] = '\0';
 	return (s);
 }
 
@@ -61,14 +61,14 @@ char *_strncat(char *ds, char *sr, int n)
  **_strchr - locates a character in a string
  *@s: parsing the string
  *@c: looking for the characters
- *Return: memory the pointer
+ *Return: memory
  */
-char *_strchr(char *t, char h)
+char *_strchr(char *s, char c)
 {
 	do {
-		if (*t == h)
-			return (t);
-	} while (*t++ != '\0');
+		if (*s == c)
+			return (s);
+	} while (*s++ != '\0');
 
 	return (NULL);
 }
