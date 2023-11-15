@@ -3,8 +3,7 @@
 /**
  * _myhistory - display the history list of the program
  *              with line and numbers , starting at 0.
- * @info: structure containing the arguement used in mainting 
- *        constain for maintaining.
+ * @info: structure containing the arguement used in mainting.
  *  Return: Always 0
  */
 int _myhistory(info_t *info)
