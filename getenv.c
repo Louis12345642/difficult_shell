@@ -53,7 +53,7 @@ int _unsetenv(info_t *inf, char *va)
  * _setenv - create a new env variable,
  * @in: maintaining structure here is a value
  * @va: the variable here is a thing
- * @vac: value of the are here 
+ * @vac: the variable here is a thing here code
  *  Return: Always 0
  */
 int _setenv(info_t *in, char *va, char *vac)
